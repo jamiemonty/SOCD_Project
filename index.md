@@ -5,12 +5,12 @@ tags: fpga vga verilog
 categories: demo
 ---
 
-Add a short welcome message or introduction here. Aim to get the viewer interested in what follows! Guideline: 1 or 2 sentences.
+Hello and welcome to my blog on the FPGA VGA Driver Project for System on Chip Design & Verification.
 
-## **Template VGA Design**
+## **VGA Design**
 ### **Project Set-Up**
-Summarise the project set-up and design flow. Include a screenshot of your own set-up, for example see the image of my Project Summary window below. Guideline 1 short paragraph.
-
+The project was set up using Vivadom, I imported files from Moodle and added these into Vivado. After everything was imported I adjusted the output clock frequency to 25MHz, this is to match the timing requirements of the VGA signal.
+<img src="https://github.com/jamiemonty/SOCD_Project/blob/main/CLK%20Frequency.png">
 <img src="https://github.com/jamiemonty/SOCD_Project/blob/main/SOCD_Project%20Summary.png">
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
