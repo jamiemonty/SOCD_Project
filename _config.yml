@@ -1,9 +1,9 @@
 # Site settings
 title: System-on-Chip Design & Verification
 author:
-  name: Michelle Lynch
-  email: your-email@domain.com
-description: "A blog."
+  name: Jamie Montgomery
+  email: G00419525@atu.ie
+description: "A blog about my System on Chip Design and Verification Project."
 
 # Build settings
 remote_theme: jekyll/minima
