@@ -10,7 +10,7 @@ Hello and welcome to my blog on the FPGA VGA Driver Project for System on Chip D
 ## **VGA Design**
 ### **Project Set-Up**
 The project was set up using Vivado, I imported files from Moodle and added these into Vivado. After everything was imported I adjusted the output clock frequency to 25MHz, this is to match the timing requirements of the VGA signal.
-<img src="https://github.com/jamiemonty/SOCD_Project/blob/main/CLK%20Frequency.png">
+<img src="https://github.com/jamiemonty/SOCD_Project/blob/main/SOCD%20Project/CLK%20Frequency.png">
 <img src="https://github.com/jamiemonty/SOCD_Project/blob/main/SOCD_Project%20Summary.png">
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
