@@ -18,16 +18,13 @@ The first Verilog template would be the VGA Sync, the purpose of this is to gene
 
 Another Verilog module called VGATop is designed to control the VGA output. If vid_on, a signal indicating whether the current pixel is within the visable area of the VGA display, is 1 (the pixel is visable) the RGB values for that pixel are passed to the colour outputs. If vid_on is 0, the RGB outputs are set to 0.
 <img src="https://github.com/jamiemonty/SOCD_Project/blob/main/SOCD%20Project/VGATop.png">
-Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
+Reference to how VGA works: https://www.asic-world.com/verilog/verilog_one_day.html
 ### **Simulation**
 The testbench generates a clock signal (25MHz) and period defined by T. At the beginning of the simulation the rst is asserted to initialise the design. After 2 clock cycles the rst is deasserted and the design starts as normal. VGA sync and the ColourStripes modules work together to generate a VGA sync signal, determines the colour of each pixel. The testbench observes the colour values and pixel coordinates. When the simulation runs, it generates the outputs based on the VGA timing and color logic. The testbench captures the output signal. You can observe how the design behaves under these conditions.
 <p float="left">
   <img src="https://github.com/jamiemonty/SOCD_Project/blob/main/SOCD%20Project/ColourStripesSimulation.png" width="48%" />
   <img src="https://github.com/jamiemonty/SOCD_Project/blob/main/SOCD%20Project/Testbench%20explanation.png" width="48%" />
 </p>
-
-Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. 
-Guideline: 1/2 short paragraphs.
 ### **Synthesis**
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
 ### **Demonstration**
