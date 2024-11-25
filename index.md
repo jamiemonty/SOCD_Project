@@ -27,6 +27,10 @@ The testbench generates a clock signal (25MHz) and period defined by T. At the b
 </p>
 ### **Synthesis**
 The synthesis process converts a high-level description of the digital system into a netlist. This netlist consists of lower-level components as shown in the image below. 
+<p float="left">
+  <img src="https://github.com/jamiemonty/SOCD_Project/blob/main/SOCD%20Project/VGA%20Synthesis%20Nets.png" width="48%" />
+  <img src="https://github.com/jamiemonty/SOCD_Project/blob/main/SOCD%20Project/logic-gates.png" width="48%" />
+</p>
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
 ### **Demonstration**
 Perhaps add a picture of your demo. Guideline: 1/2 sentences.
