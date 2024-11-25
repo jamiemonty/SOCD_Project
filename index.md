@@ -37,6 +37,7 @@ The synthesis process converts a high-level description of the digital system in
 The implementation process converts high level designs to a working hardware design that can be tested on the physical target. It involves placement, routing and timing analysis.
 <img src="https://github.com/jamiemonty/SOCD_Project/blob/main/SOCD%20Project/schematic%20.png">
 ### **Demonstration**
+<img src="https://github.com/jamiemonty/SOCD_Project/blob/main/SOCD%20Project/ColourStripes.jpg"
 Perhaps add a picture of your demo. Guideline: 1/2 sentences.
 
 ## **My VGA Design Edit**
