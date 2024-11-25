@@ -34,6 +34,8 @@ The synthesis process converts a high-level description of the digital system in
 </p>
 
 ### **Implementation**
+The implementation process converts high level designs to a working hardware design that can be tested on the physical target. It involves placement, routin and timing analysis.
+<img src="https://github.com/jamiemonty/SOCD_Project/blob/main/SOCD%20Project/schematic%20.png">
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
 ### **Demonstration**
 Perhaps add a picture of your demo. Guideline: 1/2 sentences.
