@@ -41,6 +41,7 @@ The implementation process converts high level designs to a working hardware des
 This is an image of the VGA Colour Stripes code woroking, I adapted the colourCycle testbench and VGA Top so the VGA Stripes would work.
 
 ## **My VGA Design Edit**
+My design idea would be to integrate the colour cycle VGA with the colour stripes VGA and have these 11 colours iterate in a loop on the screen horizontally. This adaption could prove to be tough as the code will have to be closely analysed to know what parts of each VGA code to integrate.
 Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
 ### **Code Adaptation**
 Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
