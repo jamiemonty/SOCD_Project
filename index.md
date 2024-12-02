@@ -7,6 +7,8 @@ categories: demo
 Jamie Montgomery - G00419525
 Hello and welcome to my blog on the FPGA VGA Driver Project for System on Chip Design & Verification.
 
+<img src="VGA.png">
+
 ## **VGA Design**
 ### **Project Set-Up**
 The project was set up using Vivado, I imported files from Moodle and added these into Vivado. After everything was imported I adjusted the output clock frequency to 25MHz, this is to match the timing requirements of the VGA signal and the VGA Sync.
