@@ -4,7 +4,7 @@ title: FPGA VGA Driver Project
 tags: fpga vga verilog
 categories: demo
 ---
-
+Jamie Montgomery - G00419525
 Hello and welcome to my blog on the FPGA VGA Driver Project for System on Chip Design & Verification.
 
 ## **VGA Design**
