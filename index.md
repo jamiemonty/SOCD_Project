@@ -36,8 +36,10 @@ The synthesis process converts a high-level description of the digital system in
 The implementation process converts high level designs to a working hardware design that can be tested on the physical target. It involves placement, routing and timing analysis.
 <img src="schematic%20.png">
 ### **Demonstration**
+<img src="ColourCycleSample.gif">
+This gif is an example of what the VGA displays to the analog output. 
 <img src="ColourStripes.jpg">
-This is an image of the VGA Colour Stripes code woroking, I adapted the colourCycle testbench and VGA Top so the VGA Stripes would work.
+This is an image of the VGA Colour Stripes code working, I adapted the ColourCycle testbench and VGA Top so the VGA Stripes would work.
 
 ## **My VGA Design Edit**
 My design idea was to integrate the colour cycle VGA with the colour stripes VGA and have these 11 colours iterate in a loop on the screen horizontally. This adaption proved to be tough as the code was too bulky and time consuming for a lab session, therefor I chose to create the German flag and analysed 'under the hood' instead of spending too much time on creating a complex design. 
