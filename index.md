@@ -38,7 +38,7 @@ The implementation process converts high level designs to a working hardware des
 <img src="https://github.com/jamiemonty/SOCD_Project/blob/main/SOCD%20Project/schematic%20.png">
 ### **Demonstration**
 <img src="https://github.com/jamiemonty/SOCD_Project/blob/main/SOCD%20Project/ColourStripes.jpg">
-Perhaps add a picture of your demo. Guideline: 1/2 sentences.
+This is an image of the VGA Colour Stripes code woroking, I adapted the colourCycle testbench and VGA Top so the VGA Stripes would work.
 
 ## **My VGA Design Edit**
 Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
