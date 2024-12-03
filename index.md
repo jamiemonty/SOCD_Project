@@ -79,7 +79,14 @@ The simulation for my design didn't differ much from the previous design. The si
 <img src="ColourStripesSimulation.png">
 
 ### **Synthesis**
-Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
+
+The synthesis is impacted due to the fewer colours, this means a simpler state machine. Then the LUTs are reduced because there are fewer logic equations to impliment. MUXs will also be simplified due to fewer RGB singal inputs. 
+
+### **Implimentation**
+
+The implimentation schematic is reduced in logic whcih means it requires fewer connections to route. With this design being smaller it could reduce the power consumption and the temperature of the FPGA Board.
+
+<img src="Temperature%20while%20running">
 
 ### **Demonstration**
 
