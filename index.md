@@ -82,10 +82,13 @@ Describe the synthesis & implementation outputs for your design, are there any d
 ### **Demonstration**
 
 #### ***German Flag VGA.***
-___
+
 This is a static image of the flag, if i had more time I would've liked to create a non-static VGA display.
+
+___
+
 <img src="IMG_0315.jpeg">
-If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
+
 ## **References**
 VGA video frame image: https://adaptivesupport.amd.com/s/article/Video-Series-1-Introduction-to-Digital-Video?language=en_US
 
