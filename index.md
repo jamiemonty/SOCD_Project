@@ -74,7 +74,9 @@ I adapted the code from the ColourStripes, I changed it so that it would display
 <img src="GermanFlagCode.png">
 
 ### **Simulation**
-Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
+The simulation for my design didn't differ much from the previous design. The simulation looks the same as ColourStripes and the falling edges + rising edges are the same due to the clk frequency staying set to 25MHz. 
+
+<img src="ColourStripesSimulation.png">
 
 ### **Synthesis**
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
