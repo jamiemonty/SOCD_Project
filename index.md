@@ -46,12 +46,17 @@ The implementation process converts high level designs to a working hardware des
 <img src="schematic%20.png">
 ### **Demonstration**
 
-This gif is an example of what the VGA displays to the analog output. This is the ColourCycle VGA.
+ColourCycle VGA.
+----
 <img src="ColourCycleSample.gif">
 
----------------------------------------------------------------------------------------------------------------------------
-<img src="ColourStripes.jpg">
+--------------------------------------------------------------------------------------------------------------------------
+
 This is an image of the VGA Colour Stripes code working, I adapted the ColourCycle testbench and VGA Top so the VGA Stripes would work. I had to debug the ColourStripes as it wasn't printing out the correct colours that was set, the cause of this was a loose VGA cable, this took some time to find as I thought it was a bug in my code.
+
+ColourStripes VGA.
+----
+<img src="ColourStripes.jpg">
 
 ## **My VGA Design Edit**
 My design idea was to integrate the colour cycle VGA with the colour stripes VGA and have these 11 colours iterate in a loop on the screen horizontally. This adaption proved to be tough as the code was too bulky and time consuming for a lab session, therefor I chose to create the German flag and analysed 'under the hood' instead of spending too much time on creating a complex design. 
