@@ -86,7 +86,7 @@ The synthesis is impacted due to the fewer colours, this means a simpler state m
 
 The implimentation schematic is reduced in logic whcih means it requires fewer connections to route. With this design being smaller it could reduce the power consumption and the temperature of the FPGA Board.
 
-<img src="Temperature%20while%20running">
+<img src="Temperaturewhilerunning">
 
 ### **Demonstration**
 
