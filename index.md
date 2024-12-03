@@ -72,9 +72,10 @@ My design idea was to integrate the colour cycle VGA with the colour stripes VGA
 I adapted the code from the ColourStripes, I changed it so that it would display the stripes horizontally by splitting the rows into 3 cells, this is seen at the beginning when row / 160 (480/160 = 3). I then assigned the RGB to each row as follows: black, red and yellow
 
 <img src="GermanFlagCode.png">
-Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
+
 ### **Simulation**
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
+
 ### **Synthesis**
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
 
