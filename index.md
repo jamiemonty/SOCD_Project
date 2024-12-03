@@ -21,7 +21,7 @@ The first Verilog template would be the VGA Sync, the purpose of this is to gene
 Another Verilog module called VGATop is designed to control the VGA output. If vid_on, a signal indicating whether the current pixel is within the visable area of the VGA display, is 1 (the pixel is visable) the RGB values for that pixel are passed to the colour outputs. If vid_on is 0, the RGB outputs are set to 0.
 <img src="VGA.png">
 
-For ColourCycle,
+For ColourCycle, the finite state machine cycles through the colours for the VGA output, each state represents a colour. The FSM goes through states based on the counter reaching a threshold (COUNT_TO)
 <p float="left">
   <img src="VGA%20Colour%20Cycle.png" width="48%" />
   <img src="VGA%20Colour%20Cycle%202.png" width="48%" />
@@ -53,7 +53,7 @@ This is an image of the VGA Colour Stripes code working, I adapted the ColourCyc
 ## **My VGA Design Edit**
 My design idea was to integrate the colour cycle VGA with the colour stripes VGA and have these 11 colours iterate in a loop on the screen horizontally. This adaption proved to be tough as the code was too bulky and time consuming for a lab session, therefor I chose to create the German flag and analysed 'under the hood' instead of spending too much time on creating a complex design. 
 <img src="IMG_0315.jpeg">
-Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
+Introduce your own design idea. Consider how complex/achievable this might be or otherwise. Reference any research you do online (use hyperlinks).
 ### **Code Adaptation**
 Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
 ### **Simulation**
