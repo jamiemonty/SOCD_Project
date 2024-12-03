@@ -54,6 +54,7 @@ This is an image of the VGA Colour Stripes code working, I adapted the ColourCyc
 My design idea was to integrate the colour cycle VGA with the colour stripes VGA and have these 11 colours iterate in a loop on the screen horizontally. This adaption proved to be tough as the code was too bulky and time consuming for a lab session, therefor I chose to create the German flag and analysed 'under the hood' instead of spending too much time on creating a complex design. 
 ### **Code Adaptation**
 I adapted the code from the ColourStripes, I changed it so that it would display the stripes horizontally by splitting the rows into 3 cells, this is seen at the beginning when row / 160 (480/160 = 3). I then assigned the RGB to each row as follows: black, red and yellow
+
 <img src="GermanFlagCode.png">
 Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
 ### **Simulation**
