@@ -29,7 +29,7 @@ The testbench generates a clock signal (25MHz) and period defined by T. At the b
 </p>
 
 ### ****Synthesis****
-The synthesis process converts a high-level description of the digital system into a netlist. This netlist consists of lower-level components as shown in the image below. 
+The synthesis process converts a high-level description of the digital system into a netlist (hardware logic). The image below is a slice taken from a configurable logic block. On the left side of the block you can see multiple LUTs. These are small blocks used to implement logic functions in FPGAs. The input to LUTs are signals that determine what colour should be generated. Below the LUTs there are multiplexers, these allow one singal out and multiple inputs based of the control signal. 
 <p float="left">
   <img src="VGA%20Synthesis%20Nets.png" width="48%" />
   <img src="logic-gates.png" width="48%" />
