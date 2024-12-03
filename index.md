@@ -46,7 +46,7 @@ The implementation process converts high level designs to a working hardware des
 <img src="schematic%20.png">
 ### **Demonstration**
 
-ColourCycle VGA.
+#### ***ColourCycle VGA***.
 ----
 <img src="ColourCycleSample.gif">
 
