@@ -19,7 +19,7 @@ Another Verilog module called VGATop is designed to control the VGA output. If v
 <img src="VGATop.png">
 Reference to how VGA works: https://www.asic-world.com/verilog/verilog_one_day.html
 ### **Simulation**
-The testbench generates a clock signal (25MHz) and period defined by T. At the beginning of the simulation the rst is asserted to initialise the design. After 2 clock cycles the rst is deasserted and the design starts as normal. VGA sync and the ColourStripes modules work together to generate a VGA sync signal, determines the colour of each pixel. The testbench observes the colour values and pixel coordinates. When the simulation runs, it generates the outputs based on the VGA timing and color logic. The testbench captures the output signal. You can observe how the design behaves under these conditions.
+The testbench generates a clock signal (25MHz) and period defined by T. At the beginning of the simulation the rst is asserted to initialise the design. After 2 clock cycles the rst is deasserted and the design starts as normal. VGA sync and the ColourStripes modules work together to generate a VGA sync signal, determines the colour of each pixel. The testbench observes the colour values and pixel coordinates. When the simulation runs, it generates the outputs based on the VGA timing and color logic. The testbench captures the output signal. You can observe how the design behaves under these conditions. I had to debug the testbench as I ran into a problem where the testbench was only testing the ColourCycle, this was due to the ColourStripes VGA not being called in the testbench. Once I established the problem the testbench ran as anticipated.
 <p float="left">
   <img src="ColourStripesSimulation.png" width="48%" />
   <img src="Testbench%20explanation.png" width="48%" />
@@ -38,10 +38,8 @@ The implementation process converts high level designs to a working hardware des
 ### **Demonstration**
 <img src="ColourCycleSample.gif">
 This gif is an example of what the VGA displays to the analog output. 
-
-
 <img src="ColourStripes.jpg">
-This is an image of the VGA Colour Stripes code working, I adapted the ColourCycle testbench and VGA Top so the VGA Stripes would work.
+This is an image of the VGA Colour Stripes code working, I adapted the ColourCycle testbench and VGA Top so the VGA Stripes would work. I had to debug the ColourStripes as it wasn't printing out the correct colours that was set, the cause of this was a loose VGA cable, this took some time to find as I thought it was a bug in my code.
 
 ## **My VGA Design Edit**
 My design idea was to integrate the colour cycle VGA with the colour stripes VGA and have these 11 colours iterate in a loop on the screen horizontally. This adaption proved to be tough as the code was too bulky and time consuming for a lab session, therefor I chose to create the German flag and analysed 'under the hood' instead of spending too much time on creating a complex design. 
