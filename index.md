@@ -21,6 +21,12 @@ The first Verilog template would be the VGA Sync, the purpose of this is to gene
 Another Verilog module called VGATop is designed to control the VGA output. If vid_on, a signal indicating whether the current pixel is within the visable area of the VGA display, is 1 (the pixel is visable) the RGB values for that pixel are passed to the colour outputs. If vid_on is 0, the RGB outputs are set to 0.
 <img src="VGA.png">
 
+For ColourCycle,
+<p float="left">
+  <img src="VGA%20Colour%20Cycle.png" width="48%" />
+  <img src="VGA%20Colour%20Cycle%202.png" width="48%" />
+</p>
+
 ### **Simulation**
 The testbench generates a clock signal (25MHz) and period defined by T. At the beginning of the simulation the rst is asserted to initialise the design. After 2 clock cycles the rst is deasserted and the design starts as normal. VGA sync and the ColourStripes modules work together to generate a VGA sync signal, determines the colour of each pixel. The testbench observes the colour values and pixel coordinates. When the simulation runs, it generates the outputs based on the VGA timing and color logic. The testbench captures the output signal. You can observe how the design behaves under these conditions. I had to debug the testbench as I ran into a problem where the testbench was only testing the ColourCycle, this was due to the ColourStripes VGA not being called in the testbench. Once I established the problem, I added the necessary code to the testbench so it would run the behavioural simulation on the correct output (code for this can be seen on the right).
 <p float="left">
