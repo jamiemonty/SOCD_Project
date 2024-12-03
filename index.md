@@ -45,8 +45,10 @@ The synthesis process converts a high-level description of the digital system in
 The implementation process converts high level designs to a working hardware design that can be tested on the physical target. It involves placement, routing and timing analysis. In the image below there is a block called clk, this is the clock signal for driving the design. The rst block initialises the system. The u_clock generates the clock signal, which is 25MHz. The u_vga_sync is responsible for generating the hSync and the vSync, it tracks the vertical and horizontal counts on the screen and outputs the vid_on which indicates if the current pixel is visable. The u_colour_stripes generates the RGB values for the pixels. The output buffering (OBUF) ensures that the signals can be driven to the VGA display without signal degradation. 
 <img src="schematic%20.png">
 ### **Demonstration**
+
 This gif is an example of what the VGA displays to the analog output. This is the ColourCycle VGA.
 <img src="ColourCycleSample.gif">
+
 ---------------------------------------------------------------------------------------------------------------------------
 <img src="ColourStripes.jpg">
 This is an image of the VGA Colour Stripes code working, I adapted the ColourCycle testbench and VGA Top so the VGA Stripes would work. I had to debug the ColourStripes as it wasn't printing out the correct colours that was set, the cause of this was a loose VGA cable, this took some time to find as I thought it was a bug in my code.
