@@ -77,10 +77,15 @@ Briefly show how you changed the template code to display a different image. Dem
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
 ### **Synthesis**
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
+
 ### **Demonstration**
+
+---
+
 This is a static image of the flag, if i had more time I would've liked to create a non-static VGA display.
 <img src="IMG_0315.jpeg">
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
 ## **References**
 VGA video frame image: https://adaptivesupport.amd.com/s/article/Video-Series-1-Introduction-to-Digital-Video?language=en_US
+
 Reference to how VGA works: https://www.asic-world.com/verilog/verilog_one_day.html
