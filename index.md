@@ -40,7 +40,7 @@ The implementation process converts high level designs to a working hardware des
 <img src="schematic%20.png">
 ### **Demonstration**
 <img src="ColourCycleSample.gif">
-This gif is an example of what the VGA displays to the analog output. 
+This gif is an example of what the VGA displays to the analog output. This is the ColourCycle VGA.
 <img src="ColourStripes.jpg">
 This is an image of the VGA Colour Stripes code working, I adapted the ColourCycle testbench and VGA Top so the VGA Stripes would work. I had to debug the ColourStripes as it wasn't printing out the correct colours that was set, the cause of this was a loose VGA cable, this took some time to find as I thought it was a bug in my code.
 
