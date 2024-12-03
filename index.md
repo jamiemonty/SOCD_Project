@@ -22,21 +22,21 @@ Another Verilog module called VGATop is designed to control the VGA output. If v
 <img src="VGATop.png">
 Reference to how VGA works: https://www.asic-world.com/verilog/verilog_one_day.html
 ### **Simulation**
-The testbench generates a clock signal (25MHz) and period defined by T. At the beginning of the simulation the rst is asserted to initialise the design. After 2 clock cycles the rst is deasserted and the design starts as normal. VGA sync and the ColourStripes modules work together to generate a VGA sync signal, determines the colour of each pixel. The testbench observes the colour values and pixel coordinates. When the simulation runs, it generates the outputs based on the VGA timing and color logic. The testbench captures the output signal. You can observe how the design behaves under these conditions. I had to debug the testbench as I ran into a problem where the testbench was only testing the ColourCycle, this was due to the ColourStripes VGA not being called in the testbench. Once I established the problem the testbench ran as anticipated.
+The testbench generates a clock signal (25MHz) and period defined by T. At the beginning of the simulation the rst is asserted to initialise the design. After 2 clock cycles the rst is deasserted and the design starts as normal. VGA sync and the ColourStripes modules work together to generate a VGA sync signal, determines the colour of each pixel. The testbench observes the colour values and pixel coordinates. When the simulation runs, it generates the outputs based on the VGA timing and color logic. The testbench captures the output signal. You can observe how the design behaves under these conditions. I had to debug the testbench as I ran into a problem where the testbench was only testing the ColourCycle, this was due to the ColourStripes VGA not being called in the testbench. Once I established the problem, I added the necessary code to the testbench so it would run the behavioural simulation on the correct output.
 <p float="left">
   <img src="ColourStripesSimulation.png" width="48%" />
   <img src="Testbench%20explanation.png" width="48%" />
 </p>
 
 ### ****Synthesis****
-The synthesis process converts a high-level description of the digital system into a netlist (hardware logic). The image below is a slice taken from a configurable logic block. On the left side of the block you can see multiple LUTs. These are small blocks used to implement logic functions in FPGAs. The input to LUTs are signals that determine what colour should be generated. Below the LUTs there are multiplexers, these allow one singal out and multiple inputs based of the control signal. 
+The synthesis process converts a high-level description of the digital system into a netlist (hardware logic). The image below is a slice taken from a configurable logic block. On the left side of the block you can see multiple LUTs, The LUTs are responsible for defining the logic functions to generate pixel colors, below the LUTs there are multiplexers, the MUX selects between multiple inputs based on the control signal, ensuring the correct pattern or color is sent to the output. In the middle section there is a carry chain, the carry chain enables efficient computation of arithmetic operations required for the color transitions.
 <p float="left">
   <img src="VGA%20Synthesis%20Nets.png" width="48%" />
   <img src="logic-gates.png" width="48%" />
 </p>
 
 ### **Implementation**
-The implementation process converts high level designs to a working hardware design that can be tested on the physical target. It involves placement, routing and timing analysis.
+The implementation process converts high level designs to a working hardware design that can be tested on the physical target. It involves placement, routing and timing analysis. In the image below there is a block called clk, this is the clock signal for driving the design. The rst block initialises the system. The u_clock generates the clock signal, which is 25MHz. The u_vga_sync is responsible for generating the hSync and the vSync, it tracks the vertical and horizontal counts on the screen and outputs the vid_on which indicates if the current pixel is visable. The u_colour_stripes generates the RGB values for the pixels. The output buffering (OBUF) ensures that the signals can be driven to the VGA display without signal degradation. 
 <img src="schematic%20.png">
 ### **Demonstration**
 <img src="ColourCycleSample.gif">
