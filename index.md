@@ -6,6 +6,9 @@ categories: demo
 ---
 Jamie Montgomery - G00419525
 ## **VGA Design**
+
+---
+
 Hello and welcome to my blog on the FPGA VGA Driver Project for System on Chip Design & Verification.
 ### **Project Set-Up**
 The project was set up using Vivado, I imported files from Moodle and added these into Vivado. After everything was imported I adjusted the output clock frequency to 25MHz, this is to match the timing requirements of the VGA signal and the VGA Sync.
@@ -60,8 +63,12 @@ This is an image of the VGA Colour Stripes code working, I adapted the ColourCyc
 
 ---
 ## **My VGA Design Edit**
+
+----
+
 My design idea was to integrate the colour cycle VGA with the colour stripes VGA and have these 11 colours iterate in a loop on the screen horizontally. This adaption proved to be tough as the code was too bulky and time consuming for a lab session, therefor I chose to create the German flag and analysed 'under the hood' instead of spending too much time on creating a complex design. 
 ### **Code Adaptation**
+
 I adapted the code from the ColourStripes, I changed it so that it would display the stripes horizontally by splitting the rows into 3 cells, this is seen at the beginning when row / 160 (480/160 = 3). I then assigned the RGB to each row as follows: black, red and yellow
 
 <img src="GermanFlagCode.png">
