@@ -12,12 +12,11 @@ The project was set up using Vivado, I imported files from Moodle and added thes
 <img src="CLKFrequency.png">
 <img src="SOCD_Project%20Summary.png">
 ### **Template Code**
-The first Verilog template would be the VGA Sync, the purpose of this is to generate horizontal and vertical sync signals for the VGA Display. It also tracks the current position of the display (rows and columns) and indicates if the pixel being displayed is in the resolution. For my project the resolution has been set to 640x480. 
+The first Verilog template would be the VGA Sync, the purpose of this is to generate horizontal and vertical sync signals for the VGA Display. It also tracks the current position of the display (rows and columns) and indicates if the pixel being displayed is in the resolution. For my project the resolution has been set to 640x480. The image on the right gives a greater idea of what each position of the pixel means.
 <p float="left">
   <img src="VGA%20Sync.png" width="48%" />
   <img src="VGA_ResolutionArea.png" width="48%" />
 </p>
-<img src="VGA%20Sync.png">
 
 Another Verilog module called VGATop is designed to control the VGA output. If vid_on, a signal indicating whether the current pixel is within the visable area of the VGA display, is 1 (the pixel is visable) the RGB values for that pixel are passed to the colour outputs. If vid_on is 0, the RGB outputs are set to 0.
 <img src="VGATop.png">
